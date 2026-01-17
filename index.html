@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Adel</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+    <!-- Header -->
+    <header class="main-header sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
+    <div class="container-app">
+        <!-- Brand -->
+        <div class="flex items-center gap-3">
+            <img 
+                src="image.jpeg"
+                alt="Foto Adel"
+                class="logo"
+            />
+
+            <div class="leading-tight">
+                <p class="font-bold text-lg">Adel</p>
+                <p class="text-xs text-slate-500">Portfolio Website</p>
+            </div>
+        </div>
+
+        <!-- Nav -->
+        <nav class="nav-wrap">
+            <a class="nav-link" href="#home-page">Home</a>
+            <a class="nav-link" href="#portfolio-page">Portfolio</a>
+            <a class="nav-link" href="#our-profile-page">Our Profile</a>
+            <a class="nav-link nav-cta" href="#message-us-page">Message Us</a>
+        </nav>
+    </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Hero / Home -->
+        <section id="home-page" class="section hero">
+            <div class="container-app grid gap-10 md:grid-cols-2 items-center">
+                <div>
+                    <span class="badge">👋 Hello there</span>
+                    <h1 class="mt-4 text-3xl md:text-5xl font-extrabold leading-tight">
+                        <span id="welcome-speech">Welcome to Adel Website</span>
+                    </h1>
+                    <p class="mt-4 text-slate-600">
+                        I build clean, responsive, and user-friendly websites. Explore my work and feel free to reach out.
+                    </p>
+
+                    <div class="mt-6 flex gap-3 flex-wrap">
+                        <a href="#portfolio-page" class="btn-primary">See Portfolio</a>
+                        <a href="#message-us-page" class="btn-secondary">Contact Me</a>
+                    </div>
+
+                    <div class="mt-8 flex gap-4 text-sm text-slate-600">
+                        <div class="stat">
+                            <p class="stat-number">10+</p>
+                            <p class="stat-label">Mini Projects</p>
+                        </div>
+                        <div class="stat">
+                            <p class="stat-number">Fast</p>
+                            <p class="stat-label">Responsive UI</p>
+                        </div>
+                        <div class="stat">
+                            <p class="stat-number">Clean</p>
+                            <p class="stat-label">Code Style</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card p-6 md:p-8">
+                        <h3 class="text-lg font-bold">Quick Highlight</h3>
+                        <p class="mt-2 text-slate-600">
+                            Skills that I often use:
+                        </p>
+
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                        <span class="chip">Tailwind</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">UI Layout</span>
+                    </div>
+
+                    <div class="mt-6 rounded-xl bg-slate-100 p-4 text-sm text-slate-700">
+                        Tip: klik menu di atas untuk pindah section dengan smooth scroll ✨
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio-page" class="section">
+            <div class="container-app">
+                <div class="section-head">
+                    <h2 class="section-title">My Portfolio</h2>
+                    <p class="section-desc">Beberapa contoh project sederhana yang bisa kamu tampilkan.</p>
+                </div>
+
+                <div class="grid gap-6 md:grid-cols-3 mt-8">
+                    <article class="card p-6">
+                        <h3 class="font-bold text-lg">Landing Page</h3>
+                        <p class="mt-2 text-slate-600">Hero section + CTA + responsive layout.</p>
+                        <div class="mt-4 flex gap-2 flex-wrap">
+                        <span class="chip">HTML</span><span class="chip">Tailwind</span>
+                        </div>
+                        <button class="mt-6 btn-secondary w-full" type="button">View Detail</button>
+                    </article>
+
+                    <article class="card p-6">
+                        <h3 class="font-bold text-lg">Form Validation</h3>
+                        <p class="mt-2 text-slate-600">Validasi input + UX message yang enak.</p>
+                        <div class="mt-4 flex gap-2 flex-wrap">
+                        <span class="chip">JS</span><span class="chip">UX</span>
+                        </div>
+                        <button class="mt-6 btn-secondary w-full" type="button">View Detail</button>
+                    </article>
+
+                    <article class="card p-6">
+                        <h3 class="font-bold text-lg">Simple Portfolio</h3>
+                        <p class="mt-2 text-slate-600">Section About + Portfolio grid + Contact.</p>
+                        <div class="mt-4 flex gap-2 flex-wrap">
+                        <span class="chip">Layout</span><span class="chip">Responsive</span>
+                        </div>
+                        <button class="mt-6 btn-secondary w-full" type="button">View Detail</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Profile -->
+        <section id="our-profile-page" class="section bg-white">
+            <div class="container-app grid gap-8 md:grid-cols-2 items-start">
+                <div class="card p-6">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="mt-3 text-slate-600">
+                        Hi! I’m Adel. I’m learning web development and focusing on building clean UI and responsive websites.
+                    </p>
+
+                    <div class="mt-6">
+                        <h3 class="font-bold">What I do</h3>
+                        <ul class="mt-3 space-y-2 text-slate-600">
+                            <li>✅ Build responsive layouts</li>
+                            <li>✅ Create interactive UI with JavaScript</li>
+                            <li>✅ Keep code clean & organized</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card p-6">
+                    <h3 class="font-bold text-lg">Skills</h3>
+                    <div class="mt-4 space-y-4">
+                        <div>
+                            <p class="text-sm font-semibold">HTML</p>
+                            <div class="progress"><span style="width: 85%"></span></div>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold">CSS / Tailwind</p>
+                            <div class="progress"><span style="width: 80%"></span></div>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold">JavaScript</p>
+                            <div class="progress"><span style="width: 70%"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact / Message Us -->
+        <section id="message-us-page" class="section">
+            <div class="container-app">
+                <div class="section-head">
+                    <h2 class="section-title">Message Us</h2>
+                    <p class="section-desc">Have a question or want to work together? Send a message.</p>
+                </div>
+
+                <div class="grid gap-8 md:grid-cols-2 mt-8">
+                    <form id="contactForm" class="card p-6" novalidate>
+                        <div class="mb-4">
+                            <label class="block mb-2 font-semibold" for="name">Name</label>
+                            <input class="input" type="text" id="name" name="name" placeholder="Your name" required />
+                            <small class="error-text" data-error="name"></small>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block mb-2 font-semibold" for="email">Email</label>
+                            <input class="input" type="email" id="email" name="email" placeholder="you@example.com" required />
+                            <small class="error-text" data-error="email"></small>
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="block mb-2 font-semibold">Jenis Kelamin</p>
+                            <div class="flex items-center gap-6">
+                                <label class="radio">
+                                    <input type="radio" name="gender" value="Perempuan" id="female" />
+                                    <span>Perempuan</span>
+                                </label>
+
+                                <label class="radio">
+                                    <input type="radio" name="gender" value="Laki-laki" id="male" />
+                                    <span>Laki-laki</span>
+                                </label>
+                            </div>
+                            <small class="error-text" data-error="gender"></small>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block mb-2 font-semibold" for="message">Message</label>
+                            <textarea class="input min-h-[120px]" id="message" name="message" placeholder="Write your message..." required></textarea>
+                            <small class="error-text" data-error="message"></small>
+                        </div>
+
+                        <button class="btn-primary w-full" type="submit">Send Message</button>
+                        <p id="formStatus" class="mt-3 text-sm text-slate-600"></p>
+                    </form>
+
+                    <div class="card p-6">
+                        <h3 class="font-bold text-lg">Contact Info</h3>
+                        <p class="mt-2 text-slate-600">You can also reach me via:</p>
+
+                        <div class="mt-4 space-y-3 text-slate-700">
+                            <div class="info-row">
+                                <span class="info-key">Email</span>
+                                <span class="info-val">adel@example.com</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-key">Location</span>
+                                <span class="info-val">Indonesia</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-key">Availability</span>
+                                <span class="info-val">Open for projects</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 rounded-xl bg-slate-100 p-4 text-sm text-slate-700"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t bg-white">
+        <div class="container-app py-6 text-center text-sm text-slate-600">
+            © 2026 Adel Company. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Javascript External -->
+    <script src="js/script.js"></script>
+</body>
+</html>
